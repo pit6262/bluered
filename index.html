@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Название проекта - Главная</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />
+</head>
+<body class="loaded">
+
+
+<!-- BEGIN BODY -->
+<div class="main-wrapper">
+
+	<!-- BEGIN HEADER -->
+	<div class="sidebar">
+		<div class="sidebar__header">
+			<div class="logo">
+				<a href="#" class="logo__container">
+					<span class="logo__circles">
+						<span class="circle-blue"></span>
+						<span class="circle-red"></span>
+					</span>
+					<span class="logo__name">BLUERED.ru</span>
+				</a>
+			</div>
+			<a href="#" class="sidebar__close js-close-sidebar">
+				<img src="img/close.png" alt="" height="14px">
+				Закрыть
+			</a>
+		</div>
+		<div class="sidebar__body">
+			<div class="profile">
+				<div class="profile__img">
+					<img src="img/profile-img.png" alt="">
+				</div>
+				<div class="profile__content">
+					<div class="profile__name">Leanne Simpson</div>
+					<div class="profile__rating">Рейтинг: 0.0001 </div>
+					<div class="profile__email">lavern.bins@gmail.com</div>
+				</div>
+			</div>
+			<div class="profile-balance">
+				<div class="profile-balance__left">
+					<div class="profile-balance__count">190.50₽</div>
+					<div class="profile-balance__descr">Баланс аккаунта</div>
+				</div>
+				<div class="profile-balance__right">
+					<a href="#" class="profile-balance__btn">Пополнить</a>
+				</div>
+			</div>
+			<a href="#" class="btn btn--danger btn--lg btn--block">НАЧАТЬ ИГРУ</a>
+			<ul class="sidebar-menu">
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--dashboard">Дашборд</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--bonus">Ежедневный бонус</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--faq">FAQ</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--support">Служба поддержки</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--exit">Выйти</a>
+				</li>
+			</ul>
+		</div>
+		<div class="sidebar__footer">
+			<p class="copyright">2018 &copy; BlueRed lottery games. <br>All right reserved.</p>
+		</div>
+	</div>
+	<div class="sidebar sidebar--mobile">
+		<div class="sidebar__header">
+			<div class="logo">
+				<a href="#" class="logo__container">
+					<span class="logo__circles">
+						<span class="circle-blue"></span>
+						<span class="circle-red"></span>
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="sidebar__body">
+			<a href="#" class="sidebar__open js-open-sidebar">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+		
+	</div>
+	<!-- HEADER EOF   -->
+
+	<!-- BEGIN CONTENT -->
+	<main class="main main--custom">
+		<div class="container">
+			<!-- BEGIN ROOMS -->
+			<div class="rooms row">
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room dashboard-room--active">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Тестовая комната</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer1" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">  
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Комната №1</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer2" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Комната №2</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer3" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Комната №3</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer4" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- ROOMS EOF   -->
+
+			<!-- BEGIN GAME -->
+			<div class="w-game row">
+				<div class="col-xxl-9 col-xl-8 w-game__item">
+					<div class="w-game__content" >
+						<div class="w-game__content-head">
+							<h1 class="w-game__title">Отсчет начнется после ставок на обестороны</h1>
+							<p class="w-game__descr">Для участвие в розиграше, выберите команду и сделайте ставку</p>
+						</div>
+
+						<div class="game-block-timer">
+							<div class="timer game-block-timer__left">
+								<div class="countdown">
+									<div id="dashboardtimer5" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">  
+										<circle class="countdown__bg" r="30" cx="32" cy="32"></circle>
+										<circle class="countdown__progress" r="30" cx="32" cy="32"></circle>
+									</svg>
+								</div>
+							</div>
+							<div class="game-block-timer__right">
+								<div class="game-block-timer__title">2 550.00 ₽</div>
+								<div class="game-block-timer__descr">Банк игры</div>
+							</div>
+						</div>
+
+						<div class="progress-block progress-block--info">
+							<div class="progress-block__fill">
+								<div class="progress-block__stroke" style="width: 80%;">
+									<div class="stroke stroke--info" style="width: 20%"></div>
+									<div class="stroke stroke--default" style="width: 15%"></div>
+									<div class="stroke stroke--info" style="width: 10%"></div>
+									<div class="stroke stroke--default" style="width: 25%"></div>
+									<div class="stroke stroke--info" style="width: 5%"></div>
+									<div class="stroke stroke--default" style="width: 10%"></div>
+									<div class="stroke stroke--info" style="width: 20%"></div>
+								</div>
+								<div class="progress-block__title">Синяя команда</div>
+								
+							</div>
+							<div class="progress-block__static">
+								<div class="static-list">
+									<div class="static-list__item">
+										<div class="static-list__title">ставок</div>
+										<div class="static-list__descr">20</div>
+									</div>
+									<div class="static-list__item">
+										<div class="static-list__title">сумма</div>
+										<div class="static-list__descr">1 500.00₽</div>
+									</div>
+									<div class="static-list__item">
+										<div class="static-list__title">шанс</div>
+										<div class="static-list__descr">82%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="progress-block progress-block--danger">
+							<div class="progress-block__fill">
+								<div class="progress-block__stroke" style="width: 63%;">
+									<div class="stroke stroke--info" style="width: 20%"></div>
+									<div class="stroke stroke--default" style="width: 50%"></div>
+									<div class="stroke stroke--info" style="width: 5%"></div>
+									<div class="stroke stroke--default" style="width: 5%"></div>
+									<div class="stroke stroke--info" style="width: 20%"></div>
+									
+								</div>
+								<div class="progress-block__title">Синяя команда</div>
+								
+							</div>
+							<div class="progress-block__static">
+								<div class="static-list">
+									<div class="static-list__item">
+										<div class="static-list__title">ставок</div>
+										<div class="static-list__descr">13</div>
+									</div>
+									<div class="static-list__item">
+										<div class="static-list__title">сумма</div>
+										<div class="static-list__descr">980.00₽</div>
+									</div>
+									<div class="static-list__item">
+										<div class="static-list__title">шанс</div>
+										<div class="static-list__descr">63%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-game__content text-center" style="display: none;">
+						<div class="w-game__content-head ">
+							<h1 class="w-game__title">Поздравляем!</h1>
+							<p class="w-game__descr">Синяя команда выиграла. Ваш выиграш <span class="price">2 480.00₽</span></p>
+						</div>
+
+						<div class="final-img">
+							<img src="img/blue.png" alt="" width="109">
+						</div>
+						<p class="text-white">Новая игра начнется через 5 секунд</p>
+					</div>
+				</div>
+				<div class="col-xxl-3 col-xl-4 w-game__item">
+					<div class="w-game__sidebar">
+						<div class="w-game__sidebar-head">
+							<div class="w-game__sidebar-title">Сделать ставку</div>
+						</div>
+						<div class="w-game__sidebar-body">
+							<div class="betsplit">
+								<div class="b-alert" style="display: none;">
+									<img src="img/checked.png" alt="" width="15px" height="15px" class="b-alert__icon">
+									Ставка принята
+									<span class="b-alert__close"><img src="img/close_window.png" alt="" width="15px" height="15px"></span>
+								</div>
+								<div class="b-alert b-alert--warning" style="display: none;">
+									Ожидайте новой игры
+									<span class="b-alert__close"><img src="img/close_window.png" alt="" width="15px" height="15px"></span>
+								</div>
+								<form action="#">
+									
+									<div class="form-field">
+										<input type="text" class="form-input" placeholder="Сумма ставки">
+									</div>
+									<div class="form-field form-field--buttons">
+										<div class="form-field__button">
+											<button type="button" class="btn btn--info btn--block">Поставить</button>
+										</div>
+										<div class="form-field__button">
+											<button type="button" class="btn btn--danger btn--block">Поставить</button>
+										</div>
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- GAME EOF   -->
+
+			<div class="w-game-table row">
+				<div class="col-xxl-9 col-xl-8">
+					<div class="row">
+						<div class="col-lg-6 w-game-table__item w-game-table__item--info">
+							<div class="w-game-table__bg">
+								<div class="w-game-table__head">
+									<div class="w-game-table__title"> Синяя команда</div>
+									<div class="w-game-table__percent">82%</div>
+								</div>
+								<div class="w-game-table__body">
+									<table class="g-table g-table--info">
+										<tr>
+											<th class="g-auto">№</th>
+											<th >Участник</th>
+											<th class="g-auto">Сумма</th>
+											<th class="g-auto">Шанс</th>
+										</tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Коля Сергеев</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">199.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">80.3%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask2.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Александр Комоедов</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">215.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">92.5%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask3.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Оксана Липилина</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">69.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">52.5%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask4.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Антон Петухов</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">10.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">11.0%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask5.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Дмитрий Куимов</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">11.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">11.5%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask4.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Антон Петухов</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">10.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">11.0%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask5.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Дмитрий Куимов</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">11.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">11.5%</td>
+										</tr>
+										
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 w-game-table__item w-game-table__item--danger">
+							<div class="w-game-table__bg">
+								<div class="w-game-table__head">
+									<div class="w-game-table__title"> Синяя команда</div>
+									<div class="w-game-table__percent">82%</div>
+								</div>
+								<div class="w-game-table__body">
+									<table class="g-table g-table--danger">
+										<tr>
+											<th class="g-auto">№</th>
+											<th >Участник</th>
+											<th class="g-auto">Сумма</th>
+											<th class="g-auto">Шанс</th>
+										</tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Коля Сергеев</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">199.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">80.3%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask2.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Александр Комоедов</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">215.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">92.5%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask3.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Оксана Липилина</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">69.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">52.5%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask4.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Антон Петухов</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">10.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">11.0%</td>
+										</tr>
+										<tr class="spacer"></tr>
+										<tr>
+											<td class="game-number g-auto">01213</td>
+											<td class="game-user">
+												<div class="game-user-block">
+													<div class="game-user-block__img">
+														<img src="img/Mask5.png" alt="">
+													</div>
+													<div class="game-user-block__name"><a href="#">Дмитрий Куимов</a></div>
+												</div>
+											</td>
+											<td class="game-amount g-auto nowrap">11.00 ₽</td>
+											<td class="game-chanse g-auto nowrap">11.5%</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xxl-3 col-xl-4 w-game-table__item">
+					<div class="w-game-table__bg">
+						<div class="w-game-table__head">
+							<div class="w-game-table__title">История игр</div>
+						</div>
+						<div class="w-game-table__body">
+							<table class="g-table">
+								<tr>
+									<th colspan="2">Команда</th>
+									<th class="g-auto">Выиграш</th>
+								</tr>
+								<tr>
+									<td class="g-auto"><span class="circle circle--info"></span></td>
+									<td>Синяя команда</td>
+									<td class="game-amount g-auto nowrap">2 199.00 ₽</td>
+								</tr>
+								<tr class="spacer"></tr>
+								<tr>
+									<td class="g-auto"><span class="circle circle--danger"></span></td>
+									<td>Красная команда </td>
+									<td class="game-amount g-auto nowrap">2 250.00 ₽</td>
+								</tr>
+								<tr class="spacer"></tr>
+								<tr>
+									<td class="g-auto"><span class="circle circle--info"></span></td>
+									<td>Синяя команда</td>
+									<td class="game-amount g-auto nowrap">2 199.00 ₽</td>
+								</tr>
+								<tr class="spacer"></tr>
+								<tr>
+									<td class="g-auto"><span class="circle circle--info"></span></td>
+									<td>Синяя команда</td>
+									<td class="game-amount g-auto nowrap">2 199.00 ₽</td>
+								</tr>
+								<tr class="spacer"></tr>
+								<tr>
+									<td class="g-auto"><span class="circle circle--danger"></span></td>
+									<td>Красная команда </td>
+									<td class="game-amount g-auto nowrap">2 199.00 ₽</td>
+								</tr>
+								
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- CONTENT EOF   -->
+
+
+	<!-- BEGIN FOOTER -->
+	<footer class="footer">
+		<div class="wrapper">
+	
+		</div>
+	</footer>
+	<!-- FOOTER EOF   -->
+
+</div>
+<!-- BODY EOF   -->
+
+
+<div class="icon-load"></div>
+<script src="js/all.js?ver1.0"></script>
+
+<script>
+	function startTimer(duration, display) {
+	    var timer = duration, minutes, seconds;
+	    setInterval(function () {
+	        minutes = parseInt(timer / 60, 10)
+	        seconds = parseInt(timer % 60, 10);
+	        minutes = minutes < 10 ? "0" + minutes : minutes;
+	        seconds = seconds < 10 ? "0" + seconds : seconds;
+	        display.text(minutes + ":" + seconds);
+	        if (--timer < 0) {
+	            timer = duration;
+	        }
+	    }, 1000);
+	}
+
+	function Timer (){
+		var display = $('#dashboardtimer1');
+		startTimer(30, display);	
+	}
+
+	// function Dashboardtimer (){
+	// 	var display = $('#dashboardtimer1');
+	// 	startTimer(30, display);	
+	// }
+
+	function Timer1 (){
+		var display = $('#dashboardtimer2');
+		startTimer(30, display);	
+	}
+	function Timer2 (){
+		var display = $('#dashboardtimer3');
+		startTimer(30, display);	
+	}
+	function Timer3 (){
+		var display = $('#dashboardtimer4');
+		startTimer(30, display);	
+	}
+	function Timer4 (){
+		var display = $('#dashboardtimer5');
+		startTimer(30, display);	
+	}
+	$(document).ready(function (){
+		Timer ();
+		Timer1 ();
+		Timer2 ();
+		Timer3 ();
+		Timer4 ();
+	});	      
+</script>
+
+
+</body>
+</html>
