@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>BlueRed - Страница новости</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />
+</head>
+<body class="loaded page-game page-bg">
+
+
+<!-- BEGIN BODY -->
+<div class="main-wrapper">
+
+	<!-- BEGIN HEADER -->
+	<div class="sidebar">
+		<div class="sidebar__header">
+			<div class="logo">
+				<a href="#" class="logo__container">
+					<img class="logo__full" src="img/logo.png">
+				</a>
+			</div>
+			<a href="#" class="sidebar__close js-close-sidebar">
+				<img src="img/close.png" alt="" height="14px">
+				Закрыть
+			</a>
+		</div>
+		<div class="sidebar__body" style="display: none;">
+			<div class="login-wrap">
+				<div class="profile">
+					<div class="profile__img">
+						<img src="img/profile-img.png" alt="">
+					</div>
+					<div class="profile__content">
+						<div class="profile__name">Leanne Simpson</div>
+						<div class="profile__rating">Рейтинг: 0.0001 </div>
+						<div class="profile__email">lavern.bins@gmail.com</div>
+					</div>
+				</div>
+				<div class="profile-balance">
+					<div class="profile-balance__left">
+						<div class="profile-balance__count">190.50₽</div>
+						<div class="profile-balance__descr">Баланс аккаунта</div>
+					</div>
+					<div class="profile-balance__right">
+						<a href="#" class="profile-balance__btn">Пополнить</a>
+					</div>
+				</div>
+				<a href="#" class="btn btn--danger btn--lg btn--block">НАЧАТЬ ИГРУ</a>
+			</div>
+			<ul class="sidebar-menu">
+				<li class="sidebar-menu__item active">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--dashboard">Дашборд</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--bonus">Ежедневный бонус</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--faq">FAQ</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--support">Служба поддержки</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--exit">Выйти</a>
+				</li>
+			</ul>
+		</div>
+		<div class="sidebar__body">
+			<div class="login-wrap">
+				<div class="profile">
+					<a href="#" class="btn btn--block">Войти на сайт</a>
+				</div>
+				<a href="#" class="btn btn--danger btn--lg btn--block">НАЧАТЬ ИГРУ</a>
+			</div>
+			<ul class="sidebar-menu">
+				<li class="sidebar-menu__item active">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--home">Главная</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--news">Новости</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--faq">FAQ</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--support">Служба поддержки</a>
+				</li>
+	
+			</ul>
+		</div>
+		<div class="sidebar__footer">
+			<p class="copyright">2018 &copy; BlueRed lottery games. <br>All right reserved.</p>
+		</div>
+	</div>
+	<div class="sidebar sidebar--mobile">
+		<div class="sidebar__header">
+			<div class="logo">
+				<a href="#" class="logo__container">
+					<img class="logo__small" src="img/logo-small.png">
+				</a>
+			</div>
+		</div>
+		<div class="sidebar__body">
+			<a href="#" class="sidebar__open js-open-sidebar">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+		
+	</div>
+	<!-- HEADER EOF   -->
+
+	<!-- BEGIN CONTENT -->
+	<main class="main main--custom">
+		<div class="container">
+			<!-- BEGIN ROOMS -->
+			<div class="rooms row">
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room dashboard-room--active">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Тестовая комната</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer1" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">  
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Комната №1</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer2" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Комната №2</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer3" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Комната №3</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer4" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- ROOMS EOF   -->
+			
+			
+			<div class="page-line">
+				<a href="#" class="btn">Вернутся назад</a>
+			</div>
+			
+			
+			<div class="page-header text-center">
+				<h1 class="title">Итоги анти-конкурса "Bad Beat"!</h1>
+			</div>
+			
+			<article class="article">
+				
+				<ul class="crumbs-list">
+					<li class="crumbs-list__item">
+						<a href="#" class="crumbs-list__link">Главная</a>
+					</li>
+					<li class="crumbs-list__item">
+						<a href="#" class="crumbs-list__link">Новости</a>
+					</li>
+					<li class="crumbs-list__item">
+						<span class="crumbs-list__text">Итоги анти-конкурса "Bad Beat"!</span>
+					</li>
+				</ul>
+
+				<h2>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.</h2>
+
+				<p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.</p>
+
+				<p>Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo.</p>
+
+				<ol>
+					<li>
+						Edit once — update everywhere.
+						<div class="ol-sub">Need to change a headline or layer style? Edit element properties and confirm the action. Your changes will be automatically applied to every item across the Sketch file.</div>
+					</li>
+					<li>
+						Creative and solid.
+						<div class="ol-sub">Flexo has creative and solid design by default. Change only key colors to fit project guidelines and it's done.</div>
+					</li>
+					<li>
+						Flexible modular structure.
+						<div class="ol-sub">Mix and match custom blocks to build perfect design structure that fits the business needs of your product.</div> 
+					</li>
+				</ol>
+
+				<p>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.</p>
+
+				<p>Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.</p>
+
+				<figure class="figure">
+					<img src="img/img.jpg" alt="">
+				</figure>
+
+				<p>I have hinted that I would often jerk poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive.</p>
+				
+				<p>I have hinted that I would often jerk poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive.</p>
+				
+				<div class="tags">
+					<a href="#" class="tags__link">#design</a>
+					<a href="#" class="tags__link">#story</a>
+					<a href="#" class="tags__link">#UI-kit</a>
+					<a href="#" class="tags__link">#productivity</a>
+				</div>
+
+				<div class="comments">
+					<ul class="comments-list">
+						<li class="comments-list__item ">
+							<div class="comment">
+								<div class="comment__header">
+									<div class="comment__author author">
+										<div class="author__img">
+											<img src="img/comments-img.png" alt="">
+										</div>
+										<div class="author__info">
+											<div class="author__name">Farrokh Hashemi</div>
+											<div class="author__date">November 23, 2017</div>
+										</div>
+									</div>
+									<div class="comment__count">2 коментария</div>
+								</div>
+								<div class="comment__body">
+									This Pill is far superior to the original pill and it plays very well for a speaker in it's class. I can actually compare this to the $300 Bose SoundLink!
+								</div>
+								<div class="comment__footer">
+									<a href="#" class="answer-link">Ответить</a>
+									<div class="comment__btns">
+										<a href="#" class="comment__btns-item"><img src="img/thumbup.png" alt="" class="icon"> <span>25</span></a>
+										<a href="#" class="comment__btns-item"><img src="img/thumbdown.png" alt="" class="icon"> <span>3</span></a>
+										<a href="#" class="comment__btns-item"><img src="img/alert.png" alt="" class="icon"></a>
+									</div>
+								</div>
+							</div>
+							<ul class="comments-answer-list">
+								<li class="comments-answer-list__item">
+									<div class="comment">
+										<div class="comment__header">
+											<div class="comment__author author">
+												<div class="author__img">
+													<img src="img/comments-img.png" alt="">
+												</div>
+												<div class="author__info">
+													<div class="author__name">Zarela Reed</div>
+													<div class="author__date">November 23, 2017</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="comment__body">
+											This Pill is far superior to the original pill and it plays very well for a speaker in it's class. I can actually compare this to the $300 Bose SoundLink!
+										</div>
+										<div class="comment__footer">
+											<a href="#" class="answer-link">Ответить</a>
+											
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<div class="comments-form">
+						<form action="#">
+							<div class="comments-form__wrap">
+								<input type="text" class="form-input" placeholder="Написать комментарий">
+								<button type="submit" class="comments-form__button"><img src="img/chat.png" alt="" class="icon"></button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</article>
+
+			<div class="page-header">
+				<div class="row align-items-center">
+					<div class="col-lg-7 page-header__contnet">
+						<h2 class="page-header__title">Похожие новости</h2>
+						<p class="page-header__descr">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.</p>
+					</div>
+					<div class="col-lg-5 page-header__button">
+						<a href="#" class="btn">Смотреть все новости</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="article-list">
+				<div class="article-list__item article-inner">
+					<a href="#" class="article-inner__link-cover">&nbsp;</a>
+					<div class="article-inner__header">
+						<div class="article-inner__title">Финиш марафона ставок</div>
+						<div class="article-inner__date">11 Mar 2017</div>
+					</div>
+					<div class="article-inner__body">
+						<p>Дорогие друзья! Мы подводим итоги конкурса "Марафон ставок" с призовым фондом 72 000 рублей! Скоро будет запущен новый конкурс, следите за новостями! Таблица победителей находится в полной новости . . .</p>
+					</div>
+				</div>
+				<div class="article-list__item article-inner">
+					<a href="#" class="article-inner__link-cover">&nbsp;</a>
+					<div class="article-inner__header">
+						<div class="article-inner__title">Раздача свободных рефералов</div>
+						<div class="article-inner__date">11 Mar 2017</div>
+					</div>
+					<div class="article-inner__body">
+						<p>Дорогие друзья! Мы подводим итоги конкурса "Марафон ставок" с призовым фондом 72 000 рублей! Скоро будет запущен новый конкурс, следите за новостями! Таблица победителей находится в полной новости . . .</p>
+					</div>
+				</div>
+				<div class="article-list__item article-inner">
+					<a href="#" class="article-inner__link-cover">&nbsp;</a>
+					<div class="article-inner__header">
+						<div class="article-inner__title">Итоги анти-конкурса "Bad Beat"!</div>
+						<div class="article-inner__date">11 Mar 2017</div>
+					</div>
+					<div class="article-inner__body">
+						<p>Дорогие друзья! Мы подводим итоги конкурса "Марафон ставок" с призовым фондом 72 000 рублей! Скоро будет запущен новый конкурс, следите за новостями! Таблица победителей находится в полной новости . . .</p>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+	</main>
+	<!-- CONTENT EOF   -->
+
+
+	<!-- BEGIN FOOTER -->
+	<footer class="footer">
+		<div class="wrapper">
+			фывфыв
+		</div>
+	</footer>
+	<!-- FOOTER EOF   -->
+
+</div>
+<!-- BODY EOF   -->
+
+
+<div class="icon-load"></div>
+<script src="js/all.js?ver1.0"></script>
+
+<script>
+	function startTimer(duration, display) {
+	    var timer = duration, minutes, seconds;
+	    setInterval(function () {
+	        minutes = parseInt(timer / 60, 10)
+	        seconds = parseInt(timer % 60, 10);
+	        minutes = minutes < 10 ? "0" + minutes : minutes;
+	        seconds = seconds < 10 ? "0" + seconds : seconds;
+	        display.text(minutes + ":" + seconds);
+	        if (--timer < 0) {
+	            timer = duration;
+	        }
+	    }, 1000);
+	}
+
+	function Timer (){
+		var display = $('#dashboardtimer1');
+		startTimer(30, display);	
+	}
+
+	// function Dashboardtimer (){
+	// 	var display = $('#dashboardtimer1');
+	// 	startTimer(30, display);	
+	// }
+
+	function Timer1 (){
+		var display = $('#dashboardtimer2');
+		startTimer(30, display);	
+	}
+	function Timer2 (){
+		var display = $('#dashboardtimer3');
+		startTimer(30, display);	
+	}
+	function Timer3 (){
+		var display = $('#dashboardtimer4');
+		startTimer(30, display);	
+	}
+	function Timer4 (){
+		var display = $('#dashboardtimer5');
+		startTimer(30, display);	
+	}
+	$(document).ready(function (){
+		Timer ();
+		Timer1 ();
+		Timer2 ();
+		Timer3 ();
+		Timer4 ();
+	});	      
+</script>
+
+
+</body>
+</html>

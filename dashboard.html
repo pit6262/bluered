@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>BlueRed - Профиль</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />
+</head>
+<body class="loaded page-game">
+
+
+<!-- BEGIN BODY -->
+<div class="main-wrapper">
+
+	<!-- BEGIN HEADER -->
+	<div class="sidebar">
+		<div class="sidebar__header">
+			<div class="logo">
+				<a href="#" class="logo__container">
+					<img class="logo__full" src="img/logo.png">
+				</a>
+			</div>
+			<a href="#" class="sidebar__close js-close-sidebar">
+				<img src="img/close.png" alt="" height="14px">
+				Закрыть
+			</a>
+		</div>
+		<div class="sidebar__body" style="display: none;">
+			<div class="login-wrap">
+				<div class="profile">
+					<div class="profile__img">
+						<img src="img/profile-img.png" alt="">
+					</div>
+					<div class="profile__content">
+						<div class="profile__name">Leanne Simpson</div>
+						<div class="profile__rating">Рейтинг: 0.0001 </div>
+						<div class="profile__email">lavern.bins@gmail.com</div>
+					</div>
+				</div>
+				<div class="profile-balance">
+					<div class="profile-balance__left">
+						<div class="profile-balance__count">190.50₽</div>
+						<div class="profile-balance__descr">Баланс аккаунта</div>
+					</div>
+					<div class="profile-balance__right">
+						<a href="#" class="profile-balance__btn">Пополнить</a>
+					</div>
+				</div>
+				<a href="#" class="btn btn--danger btn--lg btn--block">НАЧАТЬ ИГРУ</a>
+			</div>
+			<ul class="sidebar-menu">
+				<li class="sidebar-menu__item active">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--dashboard">Дашборд</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--bonus">Ежедневный бонус</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--faq">FAQ</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--support">Служба поддержки</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--exit">Выйти</a>
+				</li>
+			</ul>
+		</div>
+		<div class="sidebar__body">
+			<div class="login-wrap">
+				<div class="profile">
+					<a href="#" class="btn btn--block">Войти на сайт</a>
+				</div>
+				<a href="#" class="btn btn--danger btn--lg btn--block">НАЧАТЬ ИГРУ</a>
+			</div>
+			<ul class="sidebar-menu">
+				<li class="sidebar-menu__item active">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--home">Главная</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--news">Новости</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--faq">FAQ</a>
+				</li>
+				<li class="sidebar-menu__item">
+					<a href="#" class="sidebar-menu__link sidebar-menu__link--support">Служба поддержки</a>
+				</li>
+	
+			</ul>
+		</div>
+		<div class="sidebar__footer">
+			<p class="copyright">2018 &copy; BlueRed lottery games. <br>All right reserved.</p>
+		</div>
+	</div>
+	<div class="sidebar sidebar--mobile">
+		<div class="sidebar__header">
+			<div class="logo">
+				<a href="#" class="logo__container">
+					<img class="logo__small" src="img/logo-small.png">
+				</a>
+			</div>
+		</div>
+		<div class="sidebar__body">
+			<a href="#" class="sidebar__open js-open-sidebar">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+		
+	</div>
+	<!-- HEADER EOF   -->
+
+	<!-- BEGIN CONTENT -->
+	<main class="main main--custom">
+		<div class="container">
+			<!-- BEGIN ROOMS -->
+			<div class="rooms row">
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room dashboard-room--active">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Тестовая комната</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer1" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">  
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Комната №1</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer2" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Комната №2</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer3" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 rooms__column">
+					<div class="dashboard-room">
+						<a href="#" class="dashboard-room__link">
+							<span class="dashboard-room__content">
+								<span class="dashboard-room__name">Комната №3</span>
+								<span class="dashboard-room__players">Игроков: 4</span>
+								<span class="dashboard-room__bank">Банк: 200 руб.</span>
+							</span>
+							<span class="timer dashboard-room__timer">
+								<div class="countdown">
+									<div id="dashboardtimer4" class="countdown__number">00:30</div>
+									<svg class="countdown__svg">
+										<circle class="countdown__bg" r="25" cx="28" cy="28"></circle>
+										<circle class="countdown__progress" r="25" cx="28" cy="28"></circle>
+									</svg>
+									
+								</div>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- ROOMS EOF   -->
+			
+			<div class="row profile-columns">
+				<div class="col-xxl-4 col-xl-6  profile-columns__item">
+					<div class="box profile-block">
+						<div class="profile-block__header" style="background-image: url('img/profile-bg.jpg')">
+							<div class="profile-block__avatar">
+								<img src="img/avatar.png" alt="">
+							</div>
+							<a href="#" class="profile-block__edit"><img src="img/edit.png" alt="" class="icon"></a>
+						</div>
+						<div class="profile-block__body">
+							<div class="profile-block__name">Leanne Simpson</div>
+							<div class="profile-block__email">lavern.bins@gmail.com</div>
+						</div>
+						<div class="block-buttons">
+							<a href="#" class="btn btn--block">Настройки приватности</a>
+							<a href="#" class="btn btn--block">История входов</a>
+							<a href="#" class="btn btn--block">Привязать кошелек</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xxl-4 col-xl-6  profile-columns__item">
+					<div class="box  pricing-block">
+						<div class="pricing-block__balance">1.90 <span>₽</span></div>
+						<div class="pricing-block__text">Баланс аккаунта</div>
+						<div class="pricing-block__history">
+							<a href="#" class="link">История транзакций</a>
+						</div>
+						<div class="block-buttons">
+							<a href="#" class="btn btn--block btn--info">Пополнить баланс</a>
+							<a href="#" class="btn btn--block">Вывод средств</a>
+							<a href="#" class="btn btn--block">Перевести другому игроку</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xxl-4 col-xl-6  profile-columns__item">
+					<div class="box  referal-block">
+						<div class="referal-block__balance">525.90 <span>₽</span></div>
+						<div class="referal-block__text">Получено от рефералов</div>
+						<div class="referal-block__count">
+							
+							<img src="img/conference.png" alt="" class="icon">
+							<strong>45</strong> Рефералов
+						</div>
+						
+						<div class="block-buttons">
+							<div class="referal-block__text">
+								Приглашая друзей, вы получаете до 4% от каждой их ставки навсегда! 
+							</div>
+							<a href="#" class="btn btn--block">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+	<!-- CONTENT EOF   -->
+
+
+	<!-- BEGIN FOOTER -->
+	<footer class="footer">
+		<div class="wrapper">
+			фывфыв
+		</div>
+	</footer>
+	<!-- FOOTER EOF   -->
+
+</div>
+<!-- BODY EOF   -->
+
+
+<div class="icon-load"></div>
+<script src="js/all.js?ver1.0"></script>
+
+<script>
+	function startTimer(duration, display) {
+	    var timer = duration, minutes, seconds;
+	    setInterval(function () {
+	        minutes = parseInt(timer / 60, 10)
+	        seconds = parseInt(timer % 60, 10);
+	        minutes = minutes < 10 ? "0" + minutes : minutes;
+	        seconds = seconds < 10 ? "0" + seconds : seconds;
+	        display.text(minutes + ":" + seconds);
+	        if (--timer < 0) {
+	            timer = duration;
+	        }
+	    }, 1000);
+	}
+
+	function Timer (){
+		var display = $('#dashboardtimer1');
+		startTimer(30, display);	
+	}
+
+	// function Dashboardtimer (){
+	// 	var display = $('#dashboardtimer1');
+	// 	startTimer(30, display);	
+	// }
+
+	function Timer1 (){
+		var display = $('#dashboardtimer2');
+		startTimer(30, display);	
+	}
+	function Timer2 (){
+		var display = $('#dashboardtimer3');
+		startTimer(30, display);	
+	}
+	function Timer3 (){
+		var display = $('#dashboardtimer4');
+		startTimer(30, display);	
+	}
+	function Timer4 (){
+		var display = $('#dashboardtimer5');
+		startTimer(30, display);	
+	}
+	$(document).ready(function (){
+		Timer ();
+		Timer1 ();
+		Timer2 ();
+		Timer3 ();
+		Timer4 ();
+	});	      
+</script>
+
+
+</body>
+</html>
