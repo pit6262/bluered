@@ -20,24 +20,32 @@
 				<div class="logo">
 					<a href="#"><img src="img/logo.png?ver1.0" alt=""></a>
 				</div>
-				<ul class="main-menu">
-					<li class="main-menu__item">
-						<a href="#" class="main-menu__link">Главная</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="#" class="main-menu__link">Преемущества</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="#" class="main-menu__link">Новости</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="#" class="main-menu__link">FAQ</a>
-					</li>
-				</ul>
+				<div class="header__navbar">
+					
+					<ul class="main-menu">
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link active">Главная</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">Преемущества</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">Новости</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">FAQ</a>
+						</li>
+					</ul>
 	
-				<div class="header__right">
-					<a href="#" class="btn">Вход / Регистрация</a>
+					<div class="header__right">
+						<a href="#" class="btn">Вход / Регистрация</a>
+					</div>
 				</div>
+				<button class="header__navbar-toggle js-open-navbar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 			</div>
 		</div>
 	</header>
@@ -45,20 +53,179 @@
 
 	<!-- BEGIN CONTENT -->
 	<main class="main">
-		<section class="section home">
+		<section class="section sec-home">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-6">
 						<h1 class="home__title">Сервис быстрых лотерей</h1>
-						<p class="home__descr">Регистрируйся и получай бонус 2 рубля на свой игровой счет. Blue-Red - самые выиграшние лотереи!</p>
-						<a href="#" class="btn btn--info home__button">НАЧАТЬ ИГРУ</a>
+						<p class="home__descr">Регистрируйся и получай бонус 2 рубля на свой игровой счет. <span class="nowrap">Blue-Red</span> - самые выиграшние лотереи!</p>
+						<a href="#" class="btn btn--info home__button btn--lg">НАЧАТЬ ИГРУ</a>
 						<div class="home__login">Уже зарегистрированы? <a href="#">Авторизуйтесесь</a></div>
 					</div>
 					<div class="col-lg-6">
-						
+						<div class="video js-video" data-youtube-link="9vPyTRhYEJ4">
+							<div class="video__content">
+								<img class="video__img" src="img/video-poster.jpg" alt="" />
+								<button id="video__play" class="video__play" type="button"></button>
+							</div>
+						</div>
 					</div>
 				</div>
 		
+			</div>
+		</section>
+		<div class="container stats">
+			<div class="stats-column row">
+				<div class="stats-column__item col-xl-3 col-md-6">
+					<div class="stats-block">
+						<img src="img/online.png" alt="" class="stats-block__img f1">
+						<div class="stats-block__title">125</div>
+						<div class="stats-block__descr">Онлайн игроков</div>
+					</div>
+				</div>
+				<div class="stats-column__item col-xl-3 col-md-6">
+					<div class="stats-block">
+						<img src="img/people.png" alt="" class="stats-block__img">
+						<div class="stats-block__title">489 591</div>
+						<div class="stats-block__descr">Постоянных пользователей </div>
+					</div>
+				</div>
+				<div class="stats-column__item col-xl-3 col-md-6">
+					<div class="stats-block">
+						<img src="img/many.png" alt="" class="stats-block__img">
+						<div class="stats-block__title">72 646 815 ₽</div>
+						<div class="stats-block__descr">Выплачено денег</div>
+					</div>
+				</div>
+				<div class="stats-column__item col-xl-3 col-md-6">
+					<div class="stats-block">
+						<img src="img/check.png" alt="" class="stats-block__img">
+						<div class="stats-block__title">1 495 725</div>
+						<div class="stats-block__descr">Завершено лотерей</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="section sec-advantages">
+			<div class="container">
+				<div class="page-header text-center">
+					<h2 class="page-header__title">Преемущества Сервиса</h2>
+					<p class="page-header__descr">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.</p>
+						
+				</div>
+
+				<div class="row advantages-column">
+					<div class="col-md-6 advantages-column__item">
+						<div class="advantages-block">
+							<img src="img/people-info.png" alt="" class="advantages-block__img">
+							<div class="advantages-block__title">Более 30 комнад</div>
+							<div class="advantages-block__descr">Комнады с разным уровнем ставок от 1 рубля</div>
+						</div>
+					</div>
+					<div class="col-md-6 advantages-column__item">
+						<div class="advantages-block">
+							<img src="img/referal-img.png" alt="" class="advantages-block__img">
+							<div class="advantages-block__title">Реферальня система</div>
+							<div class="advantages-block__descr">Многоуровневая реферальня система с высокими отчислениями</div>
+						</div>
+					</div>
+					<div class="col-md-6 advantages-column__item">
+						<div class="advantages-block">
+							<img src="img/group.png" alt="" class="advantages-block__img">
+							<div class="advantages-block__title">Командный режим игры</div>
+							<div class="advantages-block__descr">выбираешь одну из двух противоборствующих команд и участвуешь в крупном командном розыгрыше</div>
+						</div>
+					</div>
+					<div class="col-md-6 advantages-column__item">
+						<div class="advantages-block">
+							<img src="img/alg.png" alt="" class="advantages-block__img">
+							<div class="advantages-block__title">Математически честный алгоритм</div>
+							<div class="advantages-block__descr">Алгоритм розыгрыша гарантирующий 100% честный розыгрыш с шифрованием и подтверждением данных через MD5</div>
+						</div>
+					</div>
+					
+				</div>
+					
+			</div>
+		</section>
+
+		<section class="section sec-subscribe">
+			<div class="container">
+				<div class="page-header text-center">
+					<h2 class="page-header__title">Начни игру сейчас!</h2>
+					<p class="page-header__descr">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.</p>
+						
+				</div>
+
+				<div class="subscribe-block">
+					<div class="row align-items-center">
+						<div class="col-lg-7 subscribe-block__item">
+							<div class="subscribe-block__title">Приветственный бонус 100 рублей для новых игроков. </div>
+							<div class="subscribe-block__descr">Выбери свою команду и вперед к победе!</div>
+						</div>
+						<div class="col-lg-5 subscribe-block__item">
+							<form action="#">
+								<div class="form-field">
+									<input type="text" class="form-input" placeholder="Имя" required="">
+								</div>
+								<div class="form-field">
+									<input type="email" class="form-input" placeholder="Email" required="">
+								</div>
+								
+								<input type="submit" class="btn btn--info btn--block btn--lg" value="НАЧАТЬ ИГРУ">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section sec-news">
+			<div class="container">
+				<div class="page-header text-center">
+					<h2 class="page-header__title">Последнии новости сервиса</h2>
+					<p class="page-header__descr">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.</p>
+						
+				</div>
+				<div class="news-block">
+					<div class="article-list">
+						<div class="article-list__item article-inner">
+							<a href="#" class="article-inner__link-cover">&nbsp;</a>
+							<div class="article-inner__header">
+								<div class="article-inner__title">Финиш марафона ставок</div>
+								<div class="article-inner__date">11 Mar 2017</div>
+							</div>
+							<div class="article-inner__body">
+								<p>Дорогие друзья! Мы подводим итоги конкурса "Марафон ставок" с призовым фондом 72 000 рублей! Скоро будет запущен новый конкурс, следите за новостями! Таблица победителей находится в полной новости . . .</p>
+							</div>
+						</div>
+						<div class="article-list__item article-inner">
+							<a href="#" class="article-inner__link-cover">&nbsp;</a>
+							<div class="article-inner__header">
+								<div class="article-inner__title">Раздача свободных рефералов</div>
+								<div class="article-inner__date">11 Mar 2017</div>
+							</div>
+							<div class="article-inner__body">
+								<p>Дорогие друзья! Мы подводим итоги конкурса "Марафон ставок" с призовым фондом 72 000 рублей! Скоро будет запущен новый конкурс, следите за новостями! Таблица победителей находится в полной новости . . .</p>
+							</div>
+						</div>
+						<div class="article-list__item article-inner">
+							<a href="#" class="article-inner__link-cover">&nbsp;</a>
+							<div class="article-inner__header">
+								<div class="article-inner__title">Итоги анти-конкурса "Bad Beat"!</div>
+								<div class="article-inner__date">11 Mar 2017</div>
+							</div>
+							<div class="article-inner__body">
+								<p>Дорогие друзья! Мы подводим итоги конкурса "Марафон ставок" с призовым фондом 72 000 рублей! Скоро будет запущен новый конкурс, следите за новостями! Таблица победителей находится в полной новости . . .</p>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="button-block">
+						<a href="#" class="btn btn--lg btn--info">Смотреть все новости</a>
+					</div>
+				</div>
 			</div>
 		</section>
 		
@@ -68,8 +235,62 @@
 
 	<!-- BEGIN FOOTER -->
 	<footer class="footer">
-		<div class="wrapper">
-			фывфыв
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-lg-3 col-md-4 footer__item">
+					<div class="logo">
+						<a href="#"><img src="img/logo.png?ver1.0" alt=""></a>
+					</div>
+					<p class="copyright">2018 &copy; BlueRed lottery games. All right reserved.</p>
+				</div>
+				<div class="col-xl-8 col-lg-9 col-md-8">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-sm-6 footer__item">
+							<ul class="footer-menu">
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Преемущества</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Новости</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">FAQ</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-sm-6 footer__item">
+							<ul class="footer-menu">
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Политика конфиденциальности</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Правила сервиса</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-sm-6 footer__item">
+							<div class="footer-title">Следи за нами в соцсетях</div>
+							<div class="social">
+								<a href="#" class="social__link">
+									<img src="img/facebook.png" alt="" class="icon">
+								</a>
+								<a href="#" class="social__link">
+									<img src="img/instagram.png" alt="" class="icon">
+								</a>
+								<a href="#" class="social__link">
+									<img src="img/twitter.png" alt="" class="icon">
+								</a>
+								<a href="#" class="social__link">
+									<img src="img/youtube.png" alt="" class="icon">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- FOOTER EOF   -->

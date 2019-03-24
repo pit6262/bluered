@@ -18,15 +18,15 @@
 		<div class="sidebar__header">
 			<div class="logo">
 				<a href="#" class="logo__container">
-					<img class="logo__full" src="img/logo.png">
+					<img class="logo__full" alt="" src="img/logo.png">
 				</a>
 			</div>
 			<a href="#" class="sidebar__close js-close-sidebar">
-				<img src="img/close.png" alt="" height="14px">
+				<img src="img/close.png" alt="" height="14">
 				Закрыть
 			</a>
 		</div>
-		<div class="sidebar__body" style="display: none;">
+		<div class="sidebar__body" >
 			<div class="login-wrap">
 				<div class="profile">
 					<div class="profile__img">
@@ -67,7 +67,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="sidebar__body">
+		<div class="sidebar__body" style="display: none;">
 			<div class="login-wrap">
 				<div class="profile">
 					<a href="#" class="btn btn--block">Войти на сайт</a>
@@ -98,7 +98,7 @@
 		<div class="sidebar__header">
 			<div class="logo">
 				<a href="#" class="logo__container">
-					<img class="logo__small" src="img/logo-small.png">
+					<img class="logo__small" alt="" src="img/logo-small.png">
 				</a>
 			</div>
 		</div>
@@ -126,7 +126,7 @@
 								<span class="dashboard-room__players">Игроков: 4</span>
 								<span class="dashboard-room__bank">Банк: 200 руб.</span>
 							</span>
-							<span class="timer dashboard-room__timer">
+							<div class="timer dashboard-room__timer">
 								<div class="countdown">
 									<div id="dashboardtimer1" class="countdown__number">00:30</div>
 									<svg class="countdown__svg">  
@@ -135,7 +135,7 @@
 									</svg>
 									
 								</div>
-							</span>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -147,7 +147,7 @@
 								<span class="dashboard-room__players">Игроков: 4</span>
 								<span class="dashboard-room__bank">Банк: 200 руб.</span>
 							</span>
-							<span class="timer dashboard-room__timer">
+							<div class="timer dashboard-room__timer">
 								<div class="countdown">
 									<div id="dashboardtimer2" class="countdown__number">00:30</div>
 									<svg class="countdown__svg">
@@ -156,7 +156,7 @@
 									</svg>
 									
 								</div>
-							</span>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -168,7 +168,7 @@
 								<span class="dashboard-room__players">Игроков: 4</span>
 								<span class="dashboard-room__bank">Банк: 200 руб.</span>
 							</span>
-							<span class="timer dashboard-room__timer">
+							<div class="timer dashboard-room__timer">
 								<div class="countdown">
 									<div id="dashboardtimer3" class="countdown__number">00:30</div>
 									<svg class="countdown__svg">
@@ -177,7 +177,7 @@
 									</svg>
 									
 								</div>
-							</span>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -189,7 +189,7 @@
 								<span class="dashboard-room__players">Игроков: 4</span>
 								<span class="dashboard-room__bank">Банк: 200 руб.</span>
 							</span>
-							<span class="timer dashboard-room__timer">
+							<div class="timer dashboard-room__timer">
 								<div class="countdown">
 									<div id="dashboardtimer4" class="countdown__number">00:30</div>
 									<svg class="countdown__svg">
@@ -198,7 +198,7 @@
 									</svg>
 									
 								</div>
-							</span>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -266,8 +266,62 @@
 
 	<!-- BEGIN FOOTER -->
 	<footer class="footer">
-		<div class="wrapper">
-			фывфыв
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-lg-3 col-md-4 footer__item">
+					<div class="logo">
+						<a href="#"><img src="img/logo.png?ver1.0" alt=""></a>
+					</div>
+					<p class="copyright">2018 &copy; BlueRed lottery games. All right reserved.</p>
+				</div>
+				<div class="col-xl-8 col-lg-9 col-md-8">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-sm-6 footer__item">
+							<ul class="footer-menu">
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Преемущества</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Новости</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">FAQ</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-sm-6 footer__item">
+							<ul class="footer-menu">
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Политика конфиденциальности</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Правила сервиса</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-sm-6 footer__item">
+							<div class="footer-title">Следи за нами в соцсетях</div>
+							<div class="social">
+								<a href="#" class="social__link">
+									<img src="img/facebook.png" alt="" class="icon">
+								</a>
+								<a href="#" class="social__link">
+									<img src="img/instagram.png" alt="" class="icon">
+								</a>
+								<a href="#" class="social__link">
+									<img src="img/twitter.png" alt="" class="icon">
+								</a>
+								<a href="#" class="social__link">
+									<img src="img/youtube.png" alt="" class="icon">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- FOOTER EOF   -->
